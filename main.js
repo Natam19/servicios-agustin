@@ -58,7 +58,7 @@
 
   // diagnóstico paso a paso
   // A dónde llegan las respuestas: un webhook (por ejemplo de n8n). Mientras esté vacío, el formulario solo muestra el "gracias".
-  var WEBHOOK_DIAGNOSTICO = '';
+  var WEBHOOK_DIAGNOSTICO = 'https://n8n.agustinynatalia.site/webhook/diagnostico-servicios';
   var form = document.getElementById('diag');
   if (form) {
     var etapas = form.querySelectorAll('.paso'), total = etapas.length, actual = 0;
