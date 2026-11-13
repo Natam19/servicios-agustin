@@ -153,6 +153,8 @@
         el.setAttribute('data-mx', r[0]); io.observe(el);
       });
     });
+    // Cajitas que suben al pasar el mouse o al tocarlas.
+    d.querySelectorAll('.svc,.case,.stat,.pstep,.q,.flow,.diag').forEach(function (c) { c.classList.add('lift'); });
     // Flechas de los botones, para que avancen al pasar el mouse.
     d.querySelectorAll('.btn').forEach(function (b) {
       var m = /^(.*?)\s*([→↗])$/.exec(b.textContent.trim());
@@ -194,6 +196,12 @@
       }, { passive: true });
     }
   }
+
+  // En el celular no hay hover: al tocar una cajita sube y vuelve.
+  d.addEventListener('touchstart', function (e) {
+    var c = e.target.closest && e.target.closest('.lift'); if (!c) return;
+    c.classList.add('toca'); clearTimeout(c._t); c._t = setTimeout(function () { c.classList.remove('toca'); }, 650);
+  }, { passive: true });
 
   if (!still && 'IntersectionObserver' in window) html.classList.add('mx');
   if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', alCargar); else alCargar();

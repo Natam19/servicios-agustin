@@ -96,7 +96,7 @@ section.alt{background:var(--bg2)}
 /* servicios */
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 .svc{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.8rem 1.6rem 1.6rem;display:flex;flex-direction:column;transition:transform .3s,border-color .3s,box-shadow .3s}
-.svc:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 22px 40px -30px var(--accent)}
+
 .svc .idx{font-size:.72rem;letter-spacing:.14em;color:var(--accent);font-weight:500}
 .svc h3{font-family:var(--serif);font-size:1.6rem;font-weight:600;line-height:1.1;margin:.8rem 0 .7rem;letter-spacing:-.01em}
 .svc p{font-size:.88rem;color:var(--dim)}
@@ -237,3 +237,19 @@ html.mx .btn{transition:translate .25s cubic-bezier(.2,.7,.2,1),background .25s,
 .dot::after{content:'';position:absolute;inset:0;border-radius:50%;background:color-mix(in srgb,var(--accent) 60%,transparent);animation:mx-pulso 2s infinite}
 @keyframes mx-pulso{0%{transform:scale(1);opacity:1}70%{transform:scale(3);opacity:0}100%{transform:scale(1);opacity:0}}
 @media print{html.mx [data-mx]{opacity:1!important;animation:none!important;clip-path:none!important}}
+
+/* cursor que parpadea junto al nombre, como en el portafolio */
+.curs{font-style:normal;color:var(--accent);animation:bl 1.1s steps(1) infinite;margin-left:1px;font-family:var(--sans);font-size:.95em}
+@keyframes bl{50%{opacity:0}}
+.brand>span{margin-left:.45rem}
+/* el título queda limpio sobre el campo de caracteres al pasar el mouse */
+.heroTitle,.heroDesc,.script{transition:text-shadow .28s ease}
+.heroTitle:hover,.heroDesc:hover,.script:hover{text-shadow:-1px -1px 0 var(--bg),1px -1px 0 var(--bg),-1px 1px 0 var(--bg),1px 1px 0 var(--bg),0 0 5px var(--bg),0 0 8px var(--bg),0 0 12px var(--bg),0 0 16px var(--bg)}
+
+/* cajitas que suben al pasar el mouse o al tocarlas en el celular */
+.lift{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s,background .35s;will-change:transform}
+.lift:hover,.lift.toca,html.mx .lift:hover,html.mx .lift.toca{transform:translateY(-6px);box-shadow:0 24px 44px -30px var(--accent);border-color:color-mix(in srgb,var(--accent) 70%,var(--line))}
+.stat.lift:hover,.stat.lift.toca,.pstep.lift:hover,.pstep.lift.toca{box-shadow:none}
+.pstep.lift:hover .big,.pstep.lift.toca .big{color:var(--accent);transition:color .35s}
+.q.lift:hover,.q.lift.toca,html.mx .q.lift:hover,html.mx .q.lift.toca{transform:translateY(-3px);box-shadow:none}
+.step.on:hover{transform:translateY(-3px)}
