@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios de IA y Automatización — Agustin Peralta</title>
+<meta name="description" content="Agentes de IA, automatización de procesos e integraciones a la medida de tu negocio. Diseño, construyo y acompaño cada sistema hasta que funciona en producción.">
+<link rel="preload" href="fonts/montserrat-normal-300-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant-garamond-normal-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>if(localStorage.getItem('tema')==='dark')document.documentElement.classList.add('dark')</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#">agustin.peralta<span>servicios</span></a>
+    <div class="links" id="links">
+      <a href="#servicios">servicios</a>
+      <a href="#proceso">cómo trabajo</a>
+      <a href="#resultados">resultados</a>
+      <a href="#preguntas">preguntas</a>
+      <a href="#contacto">diagnóstico</a>
+    </div>
+    <div class="navR">
+      <a class="btn btnP btnSm" href="#contacto">Haz el diagnóstico</a>
+      <button class="iconBtn" id="tema" aria-label="Cambiar tema">☾</button>
+      <button class="iconBtn menuBtn" id="menu" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="pill"><span class="dot"></span>Agenda abierta para nuevos proyectos</span>
+      <span class="script">Menos trabajo manual,</span>
+      <h1 class="heroTitle">más tiempo para <em>crecer.</em></h1>
+      <p class="heroDesc">Diseño y construyo <b>agentes de IA</b>, <b>automatizaciones</b> e <b>integraciones</b> a la medida de tu operación. Tú me cuentas qué tarea se repite todos los días; yo la convierto en un sistema que funciona solo y te acompaño hasta que esté en producción.</p>
+      <div class="ctas">
+        <a class="btn btnP" href="#contacto">Haz el diagnóstico gratis →</a>
+        <a class="btn" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="flow reveal" aria-hidden="true">
+      <div class="flowHead"><span class="lights"><i></i><i></i><i></i></span><span>flujo-en-vivo.n8n</span></div>
+      <div class="flowBody" id="flow">
+        <div class="step"><span class="n">1</span><div>Llega un mensaje por WhatsApp<small>"Hola, ¿tienen cita para mañana?"</small></div><span class="ok">✓</span></div>
+        <div class="step"><span class="n">2</span><div>El agente de IA entiende y consulta<small>Calendario real, CRM y base de datos</small></div><span class="ok">✓</span></div>
+        <div class="step"><span class="n">3</span><div>Reserva y registra la cita<small>Sin que nadie escriba a mano</small></div><span class="ok">✓</span></div>
+        <div class="step"><span class="n">4</span><div>Responde y deja todo auditado<small>Atención 24/7, también en fin de semana</small></div><span class="ok">✓</span></div>
+      </div>
+      <div class="flowFoot"><span>tiempo de respuesta</span><b>segundos, no horas</b></div>
+    </div>
+  </div>
+
+  <div class="wrap wrapStats">
+    <div class="stats reveal">
+      <div class="stat"><div class="num" data-n="36000" data-pre="+" data-suf=" h">+36.000 h</div><p>de trabajo manual ahorradas</p></div>
+      <div class="stat"><div class="num" data-n="390000" data-pre="+">+390.000</div><p>ejecuciones automatizadas</p></div>
+      <div class="stat"><div class="num" data-n="350" data-pre="+">+350</div><p>automatizaciones en producción</p></div>
+      <div class="stat"><div class="num" data-n="99" data-pre="~" data-suf=" %">~99 %</div><p>de disponibilidad (uptime)</p></div>
+    </div>
+  </div>
+</header>
+
+<section class="sec alt" id="servicios">
+  <div class="wrap">
+    <div class="secHead reveal">
+      <div>
+        <div class="eyebrow"><b>[ 01 ]</b> // servicios</div>
+        <h2 class="sectitle">Lo que puedo construir para tu negocio</h2>
+        <p class="secsub">Cada servicio se adapta a tu operación. No vendo plantillas: entiendo tu proceso y construyo lo que de verdad necesitas.</p>
+      </div>
+    </div>
+    <div class="services">
+      <article class="svc reveal">
+        <span class="idx">01 · ATENCIÓN Y VENTAS</span>
+        <h3>Agentes de IA para WhatsApp y redes</h3>
+        <p>Un asistente que responde, califica clientes, agenda y hace seguimiento en tus canales de mensajería, a cualquier hora y con el tono de tu marca.</p>
+        <div class="ideal"><span>Ideal si</span> pierdes ventas por no contestar a tiempo.</div>
+        <div class="tags"><span class="tag">WhatsApp Cloud API</span><span class="tag">LangGraph</span><span class="tag">Chatwoot</span></div>
+      </article>
+      <article class="svc reveal">
+        <span class="idx">02 · OPERACIÓN</span>
+        <h3>Automatización de procesos</h3>
+        <p>Conecto tus herramientas para que las tareas repetitivas se hagan solas: formularios, correos, reportes, facturas, alertas y aprobaciones.</p>
+        <div class="ideal"><span>Ideal si</span> tu equipo copia y pega datos entre sistemas.</div>
+        <div class="tags"><span class="tag">n8n</span><span class="tag">APIs</span><span class="tag">Webhooks</span></div>
+      </article>
+      <article class="svc reveal">
+        <span class="idx">03 · COMERCIAL</span>
+        <h3>Agendamiento y seguimiento comercial</h3>
+        <p>Agentes que consultan tu calendario real, reservan, mueven y cancelan citas, y campañas de correo que se escriben con el contexto de cada cliente.</p>
+        <div class="ideal"><span>Ideal si</span> tu agenda y tus seguimientos dependen de una persona.</div>
+        <div class="tags"><span class="tag">Calendarios</span><span class="tag">CRM</span><span class="tag">Correo con IA</span></div>
+      </article>
+      <article class="svc reveal">
+        <span class="idx">04 · DATOS</span>
+        <h3>Informes y análisis con IA</h3>
+        <p>Tus métricas se convierten en informes y recomendaciones que se crean y se envían solos, para decidir con datos y no con intuición.</p>
+        <div class="ideal"><span>Ideal si</span> armar un informe te toma días.</div>
+        <div class="tags"><span class="tag">LLMs</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span></div>
+      </article>
+      <article class="svc reveal">
+        <span class="idx">05 · INTEGRACIÓN</span>
+        <h3>Integración de sistemas</h3>
+        <p>Hago que tu CRM, tu ERP, tu tienda en línea y tus bases de datos hablen entre sí, con la información en un solo lugar y sin errores de digitación.</p>
+        <div class="ideal"><span>Ideal si</span> tienes datos regados en varias plataformas.</div>
+        <div class="tags"><span class="tag">REST</span><span class="tag">FastAPI</span><span class="tag">SQL</span></div>
+      </article>
+      <article class="svc reveal">
+        <span class="idx">06 · INFRAESTRUCTURA</span>
+        <h3>Infraestructura propia y apps a medida</h3>
+        <p>Llevo tus herramientas a infraestructura propia para bajar costos de suscripción, y desarrollo aplicaciones web cuando lo que existe no te sirve.</p>
+        <div class="ideal"><span>Ideal si</span> pagas cada mes por herramientas que podrías tener propias.</div>
+        <div class="tags"><span class="tag">Docker</span><span class="tag">Coolify</span><span class="tag">Next.js</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="proceso">
+  <div class="wrap">
+    <div class="secHead reveal">
+      <div>
+        <div class="eyebrow"><b>[ 02 ]</b> // cómo trabajo</div>
+        <h2 class="sectitle">Un proceso claro, de la idea a producción</h2>
+        <p class="secsub">Sabes en todo momento qué se está construyendo, cuánto cuesta y cuándo lo tienes.</p>
+      </div>
+    </div>
+    <div class="process">
+      <div class="pstep reveal"><div class="big">01</div><h3>Diagnóstico</h3><p>Conversamos sobre tu operación y encontramos qué tareas se pueden automatizar y cuáles dan más resultado.</p></div>
+      <div class="pstep reveal"><div class="big">02</div><h3>Propuesta</h3><p>Te entrego el alcance, los tiempos y el costo por escrito, antes de empezar a construir.</p></div>
+      <div class="pstep reveal"><div class="big">03</div><h3>Construcción</h3><p>Construyo por fases, con pruebas en casos reales de tu negocio y entregas que puedes ver avanzar.</p></div>
+      <div class="pstep reveal"><div class="big">04</div><h3>Lanzamiento y soporte</h3><p>Lo pongo en producción, lo monitoreo, te dejo la documentación y te acompaño con los ajustes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="resultados">
+  <div class="wrap">
+    <div class="secHead reveal">
+      <div>
+        <div class="eyebrow"><b>[ 03 ]</b> // resultados</div>
+        <h2 class="sectitle">Lo que ya ha pasado en otros negocios</h2>
+        <p class="secsub">Algunos casos reales. Los detalles completos están en mi portafolio.</p>
+      </div>
+      <a class="btn" href="https://agustin.agustinynatalia.site/#proyectos" target="_blank" rel="noopener">Ver todos los casos ↗</a>
+    </div>
+    <div class="cases">
+      <article class="case reveal">
+        <span class="meta">Comercio electrónico · 2026</span>
+        <div class="res">24/7</div>
+        <h3>Atiende y cobra por WhatsApp, de día y de noche</h3>
+        <dl class="ba"><dt>Antes</dt><dd>Mensajes sin responder de noche y pedidos que se quedaban sin pagar.</dd><dt class="now">Ahora</dt><dd>Responde al instante y recupera pagos pendientes sin escribir a mano.</dd></dl>
+        <a href="https://agustin.agustinynatalia.site/" target="_blank" rel="noopener">Ver el caso ↗</a>
+      </article>
+      <article class="case reveal">
+        <span class="meta">Comercio electrónico · 2026</span>
+        <div class="res">−91 %</div>
+        <h3>El costo mensual de operación bajó sin detener nada</h3>
+        <dl class="ba"><dt>Antes</dt><dd>Una herramienta que cobraba más cuanto más se vendía.</dd><dt class="now">Ahora</dt><dd>La misma operación, sobre infraestructura propia y con el costo bajo control.</dd></dl>
+        <a href="https://agustin.agustinynatalia.site/" target="_blank" rel="noopener">Ver el caso ↗</a>
+      </article>
+      <article class="case reveal">
+        <span class="meta">Urpe AI Lab · 2025</span>
+        <div class="res">−80 %</div>
+        <h3>Menos tiempo armando informes estratégicos</h3>
+        <dl class="ba"><dt>Antes</dt><dd>Informes que tomaban días en armarse.</dd><dt class="now">Ahora</dt><dd>Un agente que convierte las métricas en recomendaciones concretas.</dd></dl>
+        <a href="https://agustin.agustinynatalia.site/" target="_blank" rel="noopener">Ver el caso ↗</a>
+      </article>
+    </div>
+    <div class="stack reveal">
+      <span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">n8n</span><span class="tag">LangGraph</span><span class="tag">LLMs</span><span class="tag">FastAPI</span><span class="tag">Next.js</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">Docker</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="preguntas">
+  <div class="wrap">
+    <div class="secHead reveal">
+      <div>
+        <div class="eyebrow"><b>[ 04 ]</b> // preguntas</div>
+        <h2 class="sectitle">Preguntas frecuentes</h2>
+      </div>
+    </div>
+    <div class="faq reveal">
+      <div class="q"><button>¿Cuánto cuesta un proyecto?<i>+</i></button><div class="a"><p>Depende del alcance. Después del diagnóstico te envío una propuesta con un precio cerrado, para que sepas exactamente cuánto vas a invertir antes de empezar.</p></div></div>
+      <div class="q"><button>¿Cuánto tiempo toma?<i>+</i></button><div class="a"><p>Una automatización sencilla puede estar lista en pocos días. Un agente de IA completo, con integraciones, suele tomar algunas semanas. En la propuesta te doy las fechas de cada fase.</p></div></div>
+      <div class="q"><button>¿Necesito saber de tecnología?<i>+</i></button><div class="a"><p>No. Tú conoces tu negocio y yo me encargo de la parte técnica. Te explico todo en lenguaje sencillo y te dejo el sistema documentado.</p></div></div>
+      <div class="q"><button>¿Qué pasa después de la entrega?<i>+</i></button><div class="a"><p>Monitoreo que el sistema funcione bien, hago los ajustes que salgan con el uso real y quedamos en contacto para nuevas mejoras.</p></div></div>
+      <div class="q"><button>¿Trabajas con negocios fuera de Bogotá?<i>+</i></button><div class="a"><p>Sí. Trabajo de forma remota con negocios de cualquier ciudad y también de otros países.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contacto">
+  <div class="grid-bg"></div>
+  <div class="wrap reveal">
+    <span class="script">Hablemos,</span>
+    <h2 class="sectitle">¿Qué tarea te gustaría no volver a hacer a mano?</h2>
+    <p class="secsub">Responde este diagnóstico corto (toma 2 minutos) y te contacto con una propuesta de qué se puede automatizar en tu negocio y por dónde empezar.</p>
+  </div>
+
+  <div class="wrap">
+    <form class="diag reveal" id="diag" novalidate>
+      <div class="diagHead">
+        <span class="diagTitle">diagnóstico.txt</span>
+        <span class="diagStep"><b id="pasoN">1</b> / <span id="pasoT">6</span></span>
+      </div>
+      <div class="bar"><i id="barra"></i></div>
+
+      <fieldset class="paso on" data-paso="1">
+        <legend>¿Cómo se llama tu negocio y a qué se dedica?</legend>
+        <input type="text" name="negocio" placeholder="Nombre del negocio" required>
+        <input type="text" name="actividad" placeholder="Ej.: tienda de ropa en línea, clínica odontológica, agencia de viajes" required>
+      </fieldset>
+
+      <fieldset class="paso" data-paso="2">
+        <legend>¿Cuántas conversaciones con clientes tienes al día?</legend>
+        <p class="hint">Contando todos los canales: WhatsApp, redes, correo, teléfono.</p>
+        <div class="opts" data-name="conversaciones" data-tipo="uno">
+          <button type="button">Menos de 20</button><button type="button">Entre 20 y 50</button><button type="button">Entre 50 y 200</button><button type="button">Más de 200</button>
+        </div>
+        <p class="hint">¿Por dónde te escriben? Puedes elegir varios.</p>
+        <div class="opts" data-name="canales" data-tipo="varios">
+          <button type="button">WhatsApp</button><button type="button">Instagram</button><button type="button">Facebook</button><button type="button">Correo</button><button type="button">Página web</button><button type="button">Teléfono</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="paso" data-paso="3">
+        <legend>¿Qué herramientas usas hoy?</legend>
+        <p class="hint">Puedes elegir varias.</p>
+        <div class="opts" data-name="herramientas" data-tipo="varios">
+          <button type="button">Excel o Google Sheets</button><button type="button">Un CRM (HubSpot, Salesforce, Kommo...)</button><button type="button">Tienda en línea (Shopify, WooCommerce...)</button><button type="button">Facturación o ERP (Siigo, Alegra...)</button><button type="button">Google Calendar o Calendly</button><button type="button">WhatsApp Business</button><button type="button">Ninguna, todo es manual</button>
+        </div>
+        <input type="text" name="otras" placeholder="¿Otra? Escríbela aquí (opcional)">
+      </fieldset>
+
+      <fieldset class="paso" data-paso="4">
+        <legend>¿Cuánto factura tu negocio al mes, más o menos?</legend>
+        <p class="hint">Solo para proponerte algo que tenga sentido para el tamaño de tu negocio.</p>
+        <div class="opts" data-name="facturacion" data-tipo="uno">
+          <button type="button">Menos de $10 millones</button><button type="button">Entre $10 y $50 millones</button><button type="button">Entre $50 y $200 millones</button><button type="button">Más de $200 millones</button><button type="button">Prefiero no decirlo</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="paso" data-paso="5">
+        <legend>¿Qué tarea te quita más tiempo hoy?</legend>
+        <p class="hint">La que más te gustaría que se hiciera sola.</p>
+        <textarea name="tarea" rows="4" placeholder="Ej.: responder las mismas preguntas por WhatsApp, pasar los pedidos a Excel, mandar recordatorios de pago..."></textarea>
+        <p class="hint">¿Para cuándo lo necesitas?</p>
+        <div class="opts" data-name="urgencia" data-tipo="uno">
+          <button type="button">Lo antes posible</button><button type="button">En el próximo mes</button><button type="button">Solo estoy explorando</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="paso" data-paso="6">
+        <legend>¿A dónde te escribo?</legend>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="tel" name="whatsapp" placeholder="WhatsApp (con indicativo, ej. +57 300 000 0000)" required>
+        <input type="email" name="correo" placeholder="Correo electrónico (opcional)">
+        <label class="check"><input type="checkbox" name="autorizo" required> Autorizo el tratamiento de mis datos para recibir una respuesta a este diagnóstico.</label>
+      </fieldset>
+
+      <div class="gracias" id="gracias">
+        <span class="script">¡Gracias!</span>
+        <h3>Recibí tu diagnóstico.</h3>
+        <p>Lo reviso y te escribo pronto con una propuesta de por dónde empezar.</p>
+      </div>
+
+      <p class="err" id="err"></p>
+      <div class="diagNav" id="diagNav">
+        <button type="button" class="btn" id="atras">← Atrás</button>
+        <button type="button" class="btn btnP" id="siguiente">Siguiente →</button>
+      </div>
+    </form>
+
+    <p class="alt-contact reveal">¿Prefieres hablar directo? <a href="https://www.linkedin.com/in/agustin-peralta-guarin/" target="_blank" rel="noopener">Escríbeme por LinkedIn ↗</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 · Agustin Peralta · Bogotá, Colombia</span>
+    <span><a href="https://agustin.agustinynatalia.site/" target="_blank" rel="noopener">Portafolio</a> · <a href="https://github.com/Agustin1231" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/agustin-peralta-guarin/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
