@@ -130,13 +130,13 @@ section.alt{background:var(--bg2)}
 .stack .tag{font-size:.82rem;padding:.5rem 1rem;color:var(--fg);background:var(--panel)}
 
 /* preguntas */
-.faq{max-width:860px}
+.faq{width:100%}
 .q{border-bottom:1px solid var(--line)}
 .q button{width:100%;text-align:left;background:none;border:0;color:var(--fg);font-family:var(--serif);font-size:1.35rem;font-weight:600;padding:1.4rem 0;display:flex;justify-content:space-between;gap:1rem;cursor:pointer}
 .q button i{font-style:normal;color:var(--accent);font-family:var(--sans);font-weight:400;transition:transform .3s}
 .q.open button i{transform:rotate(45deg)}
 .q .a{max-height:0;overflow:hidden;transition:max-height .4s ease;color:var(--dim);font-size:.92rem}
-.q .a p{padding:0 0 1.4rem;max-width:720px}
+.q .a p{padding:0 0 1.4rem;max-width:900px}
 
 /* contacto */
 .cta{position:relative;overflow:hidden;text-align:center;padding:7rem 0}
@@ -253,3 +253,10 @@ html.mx .btn{transition:translate .25s cubic-bezier(.2,.7,.2,1),background .25s,
 .pstep.lift:hover .big,.pstep.lift.toca .big{color:var(--accent);transition:color .35s}
 .q.lift:hover,.q.lift.toca,html.mx .q.lift:hover,html.mx .q.lift.toca{transform:translateY(-3px);box-shadow:none}
 .step.on:hover{transform:translateY(-3px)}
+
+/* redes sociales */
+.redes{display:flex;gap:1rem;align-items:center;margin-top:1.8rem;color:var(--dim)}
+.redes a{display:inline-flex;transition:color .2s,transform .2s}
+.redes a:hover{color:var(--accent);transform:translateY(-2px)}
+.redesNav{margin:0 .4rem 0 0;gap:.8rem}
+@media (max-width:720px){.redesNav{display:none}}
